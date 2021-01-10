@@ -48,25 +48,5 @@ function NewWallet() {
       )
 
 }
-/*
 
-CREATE TABLE personal_wallet(
-   wid INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-   usename CHAR(120)   NOT NULL,
-   phone   INT UNIQUE NOT NULL,
-   balance INT NOT NULL
-);
-CREATE TABLE transaction(
-  transaction_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-   transac_type CHAR(120)   NOT NULL,
-   transac_date  Date   NOT NULL,
-   init_bal INT NOT NULL,
-   amount INT NOT NULL,
-   final_bal INT NOT NULL,
-   remark CHAR(200),
-   wallet_id INT
-);
-ALTER TABLE transaction
-    ADD CONSTRAINT fk_wallet FOREIGN KEY (wallet_id) REFERENCES personal_wallet (wid);
-*/
 export default NewWallet;
